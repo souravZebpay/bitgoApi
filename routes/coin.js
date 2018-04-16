@@ -75,7 +75,7 @@ router.get('/list' , (req , res) => {
     var json = {} ;
 
 
-    cron.schedule('*/1 * * * *', function(){
+    cron.schedule('*/5 * * * *', function(){
 
 
     bitgo.coin(coin).wallets().list({})
